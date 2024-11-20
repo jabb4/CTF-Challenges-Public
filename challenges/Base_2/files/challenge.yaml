@@ -1,0 +1,19 @@
+name: Base 2
+author: jabb4
+message: |-
+  Bob also needs to know the dosage of the ingredient required to deliver an exemplary result. Bob's quantum computer performed the necessary calculations and determined the correct dosage. However, it used a special algorithm to securely send the result to Bob.
+topics:
+  - Scripting
+initial_value: 500
+flag: MYRCTF{16_32_64}
+files: resultat.encoded
+generate:
+  cmd: ./generate.sh
+  dependencies:
+    - python
+    - git
+solve:
+  cmd: ./solve.sh
+  dependencies:
+    - python
+    - git

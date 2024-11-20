@@ -1,0 +1,20 @@
+name: Base 1
+author: jabb4
+message: |-
+  Bob received an email with a file that is supposed to contain an important ingredient for his new cloning preparation. The supplier didn’t send it in plain text, so Alfred is having some trouble deciphering it.
+topics:
+  - Scripting
+  - Warmup
+initial_value: 500
+flag: MYRCTF{DABASE}
+files: ingrediens.encoded
+generate:
+  cmd: ./generate.sh
+  dependencies:
+    - python
+    - git
+solve:
+  cmd: ./solve.sh
+  dependencies:
+    - python
+    - git
